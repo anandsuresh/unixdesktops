@@ -1,0 +1,28 @@
+#!/bin/sh
+
+if [ `id -u` -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+pkg install -y xorg xfce xdm
+
+if grep "dbus_enable" /etc/rc.conf > /dev/null
+then
+  echo "Skipping enabling DBUS"
+else
+  echo 'dbus_enable="YES"' >> /etc/rc.conf
+fi
+
+if grep "hald_enable" /etc/rc.conf > /dev/null
+then
+  echo "Skipping enabling HALD"
+else
+  echo 'hald_enable="YES"' >> /etc/rc.conf
+fi
+
+sed -i '' 's/ttyv8[[:space:]]\"\/usr\/local\/bin\/xdm[[:space:]]-nodaemon\"[[:space:]]xterm[[:space:]]off[[:space:]]secure/ttyv8\ \"\/usr\/local\/bin\/xdm\ -nodaemon\"\ xterm\ on\ secure/' /etc/ttys
+
+echo "#!/bin/sh" > ~/.xsession
+echo "exec /usr/local/bin/startxfce4 --with-ck-launcher" >> ~/.xsession
+chmod +x ~/.xsession
