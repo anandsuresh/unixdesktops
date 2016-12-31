@@ -64,9 +64,18 @@ else
   echo "Sorry, the script to install that hasn't been written yet."
 fi
 
-printf "Would you like to reboot? (enter yes/no): "
+echo "============================================"
+echo "|Would you like to reboot? (enter a number)|"
+echo "============================================"
+echo "|"
+echo "|1: Yes"
+echo "|2: No"
+echo "|"
+printf "|Your choice >"
 read reboot_choice
-if [ $reboot_choice -eq "yes" ]
+if [ $reboot_choice -eq "1" ]
 then
     reboot
 fi
+
+find /usr/local/home -type d | xargs cp /root/.xsession

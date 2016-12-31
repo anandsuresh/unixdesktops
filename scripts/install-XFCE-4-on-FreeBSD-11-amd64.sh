@@ -26,3 +26,5 @@ sed -i '' 's/ttyv8[[:space:]]\"\/usr\/local\/bin\/xdm[[:space:]]-nodaemon\"[[:sp
 echo "#!/bin/sh" > ~/.xsession
 echo "exec /usr/local/bin/startxfce4 --with-ck-launcher" >> ~/.xsession
 chmod +x ~/.xsession
+
+find /usr/home -type d -maxdepth 1 | xargs cp /root/.xsession 2> /dev/null
