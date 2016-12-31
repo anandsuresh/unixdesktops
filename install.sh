@@ -41,9 +41,10 @@ echo "=============================================="
 echo "|"
 echo "|1: Fluxbox"
 echo "|2: GNOME3"
-echo "|3: KDE4"
-echo "|4: Openbox"
-echo "|5: XFCE4"
+echo "|3: i3"
+echo "|4: KDE4"
+echo "|5: Openbox"
+echo "|6: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
@@ -56,11 +57,14 @@ then
   de="GNOME-3"
 elif [ $de_choice -eq "3" ]
 then
+  de="i3"
+elif [ $de_choice -e "4" ]
+then
   de="KDE-4"
-elif [ $de_choice -eq "4" ]
+elif [ $de_choice -eq "5" ]
 then
   de="Openbox"
-elif [ $de_choice -eq "5" ]
+elif [ $de_choice -eq "6" ]
 then
   de="XFCE-4"
 fi
