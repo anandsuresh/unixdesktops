@@ -63,3 +63,10 @@ then
 else
   echo "Sorry, the script to install that hasn't been written yet."
 fi
+
+printf "Would you like to reboot? (enter yes/no): "
+read reboot_choice
+if [ $reboot_choice -eq "yes" ]
+then
+    reboot
+fi
