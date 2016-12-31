@@ -53,11 +53,12 @@ echo "|11: GNOME3"
 echo "|12: herbstluftwm"
 echo "|13: i3"
 echo "|14: IceWM"
-echo "|15: KDE4"
-echo "|16: MATE"
-echo "|17: Openbox"
-echo "|18: w9wm"
-echo "|19: XFCE4"
+echo "|15: JWM"
+echo "|16: KDE4"
+echo "|17: MATE"
+echo "|18: Openbox"
+echo "|19: w9wm"
+echo "|20: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
@@ -107,17 +108,20 @@ then
   de="IceWM"
 elif [ $de_choice -eq "15" ]
 then
-  de="KDE-4"
+  de="JWM"
 elif [ $de_choice -eq "16" ]
 then
-  de="MATE"
+  de="KDE-4"
 elif [ $de_choice -eq "17" ]
 then
-  de="Openbox"
+  de="MATE"
 elif [ $de_choice -eq "18" ]
 then
-  de="w9wm"
+  de="Openbox"
 elif [ $de_choice -eq "19" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "20" ]
 then
   de="XFCE-4"
 fi
