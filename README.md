@@ -17,6 +17,7 @@ sh ./install.sh
 * **amiwm**: Window manager that makes your desktop look like an Amiga(TM)
 * **Awesome**: Tiling window manager initially based on a dwm code rewriting
 * **Blackbox**: Small and fast window manager for X11R6
+* **cwm**: Minimalistic window manager for X11 based on evilwm
 * **Fluxbox**: Small and fast window manager based on BlackBox
 * **GNOME3**: GNOME aims to provide a user-friendly suite of applications and an easy-to-use desktop.
 * **i3**: Improved dynamic tiling window manager
