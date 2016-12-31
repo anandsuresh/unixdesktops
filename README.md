@@ -25,6 +25,7 @@ sh ./install.sh
 * **fvwm1**: fvwm1 is based partially on the code for twm, a classic window manager included with the MIT X11 distribution
 * **fvwm2**: Originally a twm derivative, FVWM has evolved into a powerful and highly configurable environment for Unix-like systems.
 * **GNOME3**: GNOME aims to provide a user-friendly suite of applications and an easy-to-use desktop.
+* **herbstluftwm**: herbstluftwm is a manual tiling window manager for X11 using Xlib and Glib
 * **i3**: Improved dynamic tiling window manager
 * **KDE4**: KDE is a powerful graphical desktop environment for Unix workstations.
 * **MATE**: The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems.
