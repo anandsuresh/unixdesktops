@@ -47,13 +47,15 @@ echo "|5: dwm"
 echo "|6: evilwm"
 echo "|7: Fluxbox"
 echo "|8: flwm"
-echo "|9: GNOME3"
-echo "|10: i3"
-echo "|11: KDE4"
-echo "|12: MATE"
-echo "|13: Openbox"
-echo "|14: w9wm"
-echo "|15: XFCE4"
+echo "|9: fvwm1"
+echo "|10: fvwm2"
+echo "|11: GNOME3"
+echo "|12: i3"
+echo "|13: KDE4"
+echo "|14: MATE"
+echo "|15: Openbox"
+echo "|16: w9wm"
+echo "|17: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
@@ -85,23 +87,29 @@ then
   de="flwm"
 elif [ $de_choice -eq "9" ]
 then
-  de="GNOME-3"
+  de="fvwm-1"
 elif [ $de_choice -eq "10" ]
 then
-  de="i3"
+  de="fvwm-2"
 elif [ $de_choice -eq "11" ]
 then
-  de="KDE-4"
+  de="GNOME-3"
 elif [ $de_choice -eq "12" ]
 then
-  de="MATE"
+  de="i3"
 elif [ $de_choice -eq "13" ]
 then
-  de="Openbox"
+  de="KDE-4"
 elif [ $de_choice -eq "14" ]
 then
-  de="w9wm"
+  de="MATE"
 elif [ $de_choice -eq "15" ]
+then
+  de="Openbox"
+elif [ $de_choice -eq "16" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "17" ]
 then
   de="XFCE-4"
 fi

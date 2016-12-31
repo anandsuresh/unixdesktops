@@ -20,8 +20,10 @@ sh ./install.sh
 * **cwm**: Minimalistic window manager for X11 based on evilwm
 * **dwm**: Dynamic, small, fast and simple window manager
 * **evilwm**: Minimalist window manager based on 9wm
-* **flwm**: The Fast Light Window Manager
 * **Fluxbox**: Small and fast window manager based on BlackBox
+* **flwm**: The Fast Light Window Manager
+* **fvwm1**: fvwm1 is based partially on the code for twm, a classic window manager included with the MIT X11 distribution
+* **fvwm2**: Originally a twm derivative, FVWM has evolved into a powerful and highly configurable environment for Unix-like systems.
 * **GNOME3**: GNOME aims to provide a user-friendly suite of applications and an easy-to-use desktop.
 * **i3**: Improved dynamic tiling window manager
 * **KDE4**: KDE is a powerful graphical desktop environment for Unix workstations.
