@@ -12,7 +12,7 @@ echo "|"
 echo "|1: FreeBSD 11"
 echo "|"
 printf "|Your choice >"
-read os_choice
+read os_choice"=============================================="
 echo "|"
 
 if [ $os_choice -eq "1" ]
@@ -39,44 +39,48 @@ echo "=============================================="
 echo "|Choose a desktop environment(enter a number)|"
 echo "=============================================="
 echo "|"
-echo "|1: Awesome"
-echo "|2: Fluxbox"
-echo "|3: GNOME3"
-echo "|4: i3"
-echo "|5: KDE4"
-echo "|6: MATE"
-echo "|7: Openbox"
-echo "|8: w9wm"
-echo "|9: XFCE4"
+echo "|1: amiwm"
+echo "|2: Awesome"
+echo "|3: Fluxbox"
+echo "|4: GNOME3"
+echo "|5: i3"
+echo "|6: KDE4"
+echo "|7: MATE"
+echo "|8: Openbox"
+echo "|9: w9wm"
+echo "|10: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
 
 if [ $de_choice -eq "1" ]
 then
-  de="Awesome"
+  de="amiwm"
 elif [ $de_choice -eq "2" ]
 then
-  de="Fluxbox"
+  de="Awesome"
 elif [ $de_choice -eq "3" ]
 then
-  de="GNOME-3"
+  de="Fluxbox"
 elif [ $de_choice -eq "4" ]
 then
-  de="i3"
-elif [ $de_choice -e "5" ]
+  de="GNOME-3"
+elif [ $de_choice -eq "5" ]
 then
-  de="KDE-4"
+  de="i3"
 elif [ $de_choice -eq "6" ]
 then
-  de="MATE"
+  de="KDE-4"
 elif [ $de_choice -eq "7" ]
 then
-  de="Openbox"
+  de="MATE"
 elif [ $de_choice -eq "8" ]
 then
-  de="w9wm"
+  de="Openbox"
 elif [ $de_choice -eq "9" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "10" ]
 then
   de="XFCE-4"
 fi

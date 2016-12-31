@@ -14,12 +14,13 @@ sh ./install.sh
 # Currently Supported Desktops
 
 #### FreeBSD
-* Awesome
-* Fluxbox
-* GNOME 
-* i3
-* KDE4
-* MATE
-* Openbox
-* w9wm
-* XFCE
+* amiwm: Window manager that makes your desktop look like an Amiga(TM)
+* Awesome: Tiling window manager initially based on a dwm code rewriting
+* Fluxbox: Small and fast window manager based on BlackBox
+* GNOME3: GNOME aims to provide a user-friendly suite of applications and an easy-to-use desktop.
+* i3: Improved dynamic tiling window manager
+* KDE4: KDE is a powerful graphical desktop environment for Unix workstations.
+* MATE: The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems.
+* Openbox: Small, fast, standards compliant, extensible window manager
+* w9wm: Hack of 9wm to give virtual screens
+* XFCE: Lightweight desktop environment for various Unix systems, easy to use and configure.
