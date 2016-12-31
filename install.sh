@@ -12,7 +12,7 @@ echo "|"
 echo "|1: FreeBSD 11"
 echo "|"
 printf "|Your choice >"
-read os_choice"=============================================="
+read os_choice
 echo "|"
 
 if [ $os_choice -eq "1" ]
