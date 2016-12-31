@@ -5,7 +5,7 @@ if [ `id -u` -ne 0 ]
   exit
 fi
 
-pkg install -y xorg xdm fluxbox
+pkg install -y xorg xdm mate
 
 if grep "dbus_enable" /etc/rc.conf > /dev/null
 then
@@ -24,7 +24,7 @@ fi
 sed -i '' 's/ttyv8[[:space:]]\"\/usr\/local\/bin\/xdm[[:space:]]-nodaemon\"[[:space:]]xterm[[:space:]]off[[:space:]]secure/ttyv8\ \"\/usr\/local\/bin\/xdm\ -nodaemon\"\ xterm\ on\ secure/' /etc/ttys
 
 echo "#!/bin/sh" > ~/.xsession
-echo "exec /usr/local/bin/startfluxbox" >> ~/.xsession
+echo "exec /usr/local/bin/mate-session" >> ~/.xsession
 chmod +x ~/.xsession
 
 find /usr/home -type d -maxdepth 1 | grep "/usr/home/.*" |grep -v -e '^$' | xargs cp /root/.xsession
