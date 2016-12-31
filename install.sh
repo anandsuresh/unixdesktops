@@ -77,5 +77,3 @@ if [ $reboot_choice -eq "1" ]
 then
     reboot
 fi
-
-find /usr/local/home -type d | xargs cp /root/.xsession
