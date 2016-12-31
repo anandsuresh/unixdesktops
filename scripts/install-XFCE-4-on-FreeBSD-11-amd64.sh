@@ -27,5 +27,5 @@ echo "#!/bin/sh" > ~/.xsession
 echo "exec /usr/local/bin/startxfce4 --with-ck-launcher" >> ~/.xsession
 chmod +x ~/.xsession
 
-find /usr/home -type d -maxdepth 1 | grep -v -e '^$' | xargs cp /root/.xsession
-find /usr/home -maxdepth 1 -type d | cut -d '/' -f 3 | grep -v -e '^$' | grep -v 'lost+found' | xargs -I {} chown {}:{} /home/{}/.xsession
+find /usr/home -type d -maxdepth 1 | grep "/usr/home/.*" |grep -v -e '^$' | xargs cp /root/.xsession
+find /usr/home -maxdepth 1 -type d | cut -d '/' -f 4 | grep -v -e '^$' | grep -v 'lost+found' | xargs -I {} chown {}:{} /usr/home/{}/.xsession
