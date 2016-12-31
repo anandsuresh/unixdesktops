@@ -39,32 +39,44 @@ echo "=============================================="
 echo "|Choose a desktop environment(enter a number)|"
 echo "=============================================="
 echo "|"
-echo "|1: Fluxbox"
-echo "|2: GNOME3"
-echo "|3: i3"
-echo "|4: KDE4"
-echo "|5: Openbox"
-echo "|6: XFCE4"
+echo "|1: Awesome"
+echo "|2: Fluxbox"
+echo "|3: GNOME3"
+echo "|4: i3"
+echo "|5: KDE4"
+echo "|6: MATE"
+echo "|7: Openbox"
+echo "|8: w9wm"
+echo "|9: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
 
 if [ $de_choice -eq "1" ]
 then
-  de="Fluxbox"
+  de="Awesome"
 elif [ $de_choice -eq "2" ]
 then
-  de="GNOME-3"
+  de="Fluxbox"
 elif [ $de_choice -eq "3" ]
 then
+  de="GNOME-3"
+elif [ $de_choice -eq "4" ]
+then
   de="i3"
-elif [ $de_choice -e "4" ]
+elif [ $de_choice -e "5" ]
 then
   de="KDE-4"
-elif [ $de_choice -eq "5" ]
+elif [ $de_choice -eq "6" ]
+then
+  de="MATE"
+elif [ $de_choice -eq "7" ]
 then
   de="Openbox"
-elif [ $de_choice -eq "6" ]
+elif [ $de_choice -eq "8" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "9" ]
 then
   de="XFCE-4"
 fi
