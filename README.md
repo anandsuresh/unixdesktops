@@ -13,7 +13,7 @@ sh ./install.sh
 
 # Currently Supported Desktops
 
-#### FreeBSD
+#### FreeBSD 11 x64
 * **amiwm**: Window manager that makes your desktop look like an Amiga(TM)
 * **Awesome**: Tiling window manager initially based on a dwm code rewriting
 * **Blackbox**: Small and fast window manager for X11R6
