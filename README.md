@@ -30,6 +30,8 @@ sh ./install.sh
 * **icewm**: Window Manager designed for speed, usability and consistency.
 * **jwm**: Joe's Window Manager
 * **KDE4**: KDE is a powerful graphical desktop environment for Unix workstations.
+* **larswm**: Tiling Window Manager for X
+* **lwm**: Lightweight window manager
 * **MATE**: The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems.
 * **Openbox**: Small, fast, standards compliant, extensible window manager
 * **w9wm**: Hack of 9wm to give virtual screens
