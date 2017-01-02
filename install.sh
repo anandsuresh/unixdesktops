@@ -55,12 +55,13 @@ echo "|13: i3"
 echo "|14: IceWM"
 echo "|15: JWM"
 echo "|16: KDE4"
-echo "|17: larswm" 
+echo "|17: larswm"
 echo "|18: lwm"
 echo "|19: MATE"
 echo "|20: Openbox"
-echo "|21: w9wm"
-echo "|22: XFCE4"
+echo "|21: oroborus"
+echo "|22: w9wm"
+echo "|23: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
@@ -128,8 +129,11 @@ then
   de="Openbox"
 elif [ $de_choice -eq "21" ]
 then
-  de="w9wm"
+  de="oroborus"
 elif [ $de_choice -eq "22" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "23" ]
 then
   de="XFCE-4"
 fi
