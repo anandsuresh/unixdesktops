@@ -36,5 +36,6 @@ sh ./install.sh
 * **Openbox**: Small, fast, standards compliant, extensible window manager
 * **PekWM**: Light, Unobtrusive, and configurable windowmanager
 * **oroborus**: Small and simple GNOME-compatible window manager
+* **tinywm**: Ridiculously tiny window manager
 * **w9wm**: Hack of 9wm to give virtual screens
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.
