@@ -60,8 +60,9 @@ echo "|18: lwm"
 echo "|19: MATE"
 echo "|20: Openbox"
 echo "|21: oroborus"
-echo "|22: w9wm"
-echo "|23: XFCE4"
+echo "|22: PekWM"
+echo "|23: w9wm"
+echo "|24: XFCE4"
 echo "|"
 printf "|Your choice >"
 read de_choice
@@ -132,8 +133,11 @@ then
   de="oroborus"
 elif [ $de_choice -eq "22" ]
 then
-  de="w9wm"
+  de="PekWM"
 elif [ $de_choice -eq "23" ]
+then
+  de="w9wm"
+elif [ $de_choice -eq "24" ]
 then
   de="XFCE-4"
 fi
