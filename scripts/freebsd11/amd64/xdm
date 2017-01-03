@@ -1,5 +1,5 @@
 #!/bin/sh
-pkg install xdm
+pkg install -y xdm
 sed -i '' 's/ttyv8[[:space:]]\"\/usr\/local\/bin\/xdm[[:space:]]-nodaemon\"[[:space:]]xterm[[:space:]]off[[:space:]]secure/ttyv8\ \"\/usr\/local\/bin\/xdm\ -nodaemon\"\ xterm\ on\ secure/' /etc/ttys
 sh $(dirname "$0")/xsession
 
