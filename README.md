@@ -14,6 +14,7 @@ sh ./install.sh
 # Currently Supported Desktops
 (Descriptions pulled from package repos and project pages)
 #### FreeBSD 11 x64
+* **2wm**: dual window manager prototype (minimalist dwm with no tags, just one view)
 * **aewm**: ICCCM-compliant window manager based on 9wm
 * **amiwm**: Window manager that makes your desktop look like an Amiga(TM)
 * **antiwm**: Minimalist window manager inspired by Ratpoison
