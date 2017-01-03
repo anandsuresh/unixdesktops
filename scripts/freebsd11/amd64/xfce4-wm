@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y xfce4-wm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/xfwm4" >> /root/.xsession
+sh $(dirname "$0")/xdm
