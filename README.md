@@ -44,6 +44,7 @@ sh ./install.sh
 * **oroborus**: Small and simple GNOME-compatible window manager
 * **PekWM**: Light, Unobtrusive, and configurable windowmanager
 * **piewm**: tvtwm with pie (circular) menus
+* **pwm**: lightweight window manager with emphasis on usability
 * **spectrwm**: Small, dynamic tiling window manager for X11
 * **tinywm**: Ridiculously tiny window manager
 * **twm**: Tab Window Manager for the X Window System

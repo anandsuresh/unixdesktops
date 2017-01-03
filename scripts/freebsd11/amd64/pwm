@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y pwm
+echo "exec /usr/local/bin/pwm" >> /root/.xsession
+sh $(dirname "$0")/xdm
