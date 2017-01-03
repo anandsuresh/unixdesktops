@@ -42,6 +42,7 @@ then
   exit 0
 fi
 
+sh scripts/"$os/$arch/base"
 sh scripts/"$os/$arch/$de"
 
 echo "===================================="
