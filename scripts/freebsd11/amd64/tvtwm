@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y tvtwm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/tvtwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

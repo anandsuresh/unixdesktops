@@ -48,6 +48,8 @@ sh ./install.sh
 * **spectrwm**: Small, dynamic tiling window manager for X11
 * **swm**: Window manager for low-memory systems, with title bars and shading
 * **tinywm**: Ridiculously tiny window manager
+* **treewm**: Window manager that arranges windows in a tree
+* **tvtwm**: Twm with a virtual desktop
 * **twm**: Tab Window Manager for the X Window System
 * **w9wm**: Hack of 9wm to give virtual screens
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.
