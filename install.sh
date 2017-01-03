@@ -51,7 +51,7 @@ echo "|This will attempt to install $de on $os $arch, are you sure you want to c
 echo "|"
 printf "|Your choice >"
 read -r warning_choice
-if [ "$warning_choice" -ne "y" ]
+if [ "$warning_choice" != "y" ]
 then
   exit 0
 fi
@@ -64,7 +64,7 @@ echo "================================="
 echo "|"
 printf "|Your choice >"
 read -r reboot_choice
-if [ "$reboot_choice" -eq "y" ]
+if [ "$reboot_choice" = "y" ]
 then
     reboot
 fi
