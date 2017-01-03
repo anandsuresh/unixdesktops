@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y aewm
+echo "exec /usr/local/bin/aewm" >> /root/.xsession
+sh $(dirname "$0")/xdm
