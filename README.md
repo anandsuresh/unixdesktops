@@ -54,4 +54,5 @@ sh ./install.sh
 * **vtwm**: Twm with a virtual desktop and optional Motif-like features
 * **w9wm**: Hack of 9wm to give virtual screens
 * **WeeWM**: Fast and ultra light windowmanager with total keyboard control
+* **WindowMaker**: GNUstep-compliant NeXTstep window manager clone
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.

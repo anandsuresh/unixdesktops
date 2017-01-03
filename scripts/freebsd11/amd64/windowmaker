@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y windowmaker 
+echo "exec /usr/local/bin/wmaker" >> /root/.xsession
+sh $(dirname "$0")/xdm
