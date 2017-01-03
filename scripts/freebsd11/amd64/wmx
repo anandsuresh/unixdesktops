@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y wmx
+echo "exec /usr/local/bin/wmx" >> /root/.xsession
+sh $(dirname "$0")/xdm

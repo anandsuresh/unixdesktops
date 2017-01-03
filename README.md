@@ -58,6 +58,7 @@ sh ./install.sh
 * **wm2**: Simple window manager for X
 * **wmfs**: Floating and tiling Window Manager from Scratch
 * **wmii**: Dynamic, minimalist window manager for X11
+* **wmx**: Simple window manager based on wm2
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.
 
 # License
