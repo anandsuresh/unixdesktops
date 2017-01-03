@@ -1,7 +1,8 @@
 #!/bin/sh
 
-if [ `id -u` -ne 0 ]
-  then echo "Please run as root"
+if [ "$(id -u)" -ne 0 ]
+then
+  echo "Please run as root"
   exit
 fi
 
@@ -12,10 +13,10 @@ echo "|"
 echo "|1: FreeBSD 11"
 echo "|"
 printf "|Your choice >"
-read os_choice
+read -r os_choice
 echo "|"
 
-if [ $os_choice -eq "1" ]
+if [ "$os_choice" -eq "1" ]
 then
   os="FreeBSD-11"
 fi
@@ -27,146 +28,43 @@ echo "|"
 echo "|1: amd64"
 echo "|"
 printf "|Your choice >"
-read arch_choice
+read -r arch_choice
 echo "|"
 
-if [ $arch_choice -eq "1" ]
+if [ "$arch_choice" -eq "1" ]
 then
   arch="amd64"
 fi
 
-echo "=============================================="
-echo "|Choose a desktop environment(enter a number)|"
-echo "=============================================="
+echo "============================================="
+echo "|Choose a desktop environment(enter a name)|"
+echo "============================================="
+find scripts/install-*-on-$os-$arch.sh | cut -d '-' -f 2 | column -x -c 80
+printf "|Your choice >"
+read -r de
+
+echo "========="
+echo "|WARNING|"
+echo "========="
 echo "|"
-echo "|1: amiwm"
-echo "|2: Awesome"
-echo "|3: Blackbox"
-echo "|4: cwm"
-echo "|5: dwm"
-echo "|6: evilwm"
-echo "|7: Fluxbox"
-echo "|8: flwm"
-echo "|9: fvwm1"
-echo "|10: fvwm2"
-echo "|11: GNOME3"
-echo "|12: herbstluftwm"
-echo "|13: i3"
-echo "|14: IceWM"
-echo "|15: JWM"
-echo "|16: KDE4"
-echo "|17: larswm"
-echo "|18: lwm"
-echo "|19: MATE"
-echo "|20: Openbox"
-echo "|21: oroborus"
-echo "|22: PekWM"
-echo "|23: spectrwm"
-echo "|24: tinywm"
-echo "|25: w9wm"
-echo "|26: XFCE4"
+echo "|This will attempt to install $de on $os $arch, are you sure you want to continue? (y/n)"
 echo "|"
 printf "|Your choice >"
-read de_choice
-
-
-if [ $de_choice -eq "1" ]
+read -r warning_choice
+if [ "$warning_choice" -ne "y" ]
 then
-  de="amiwm"
-elif [ $de_choice -eq "2" ]
-then
-  de="Awesome"
-elif [ $de_choice -eq "3" ]
-then
-  de="Blackbox"
-elif [ $de_choice -eq "4" ]
-then
-  de="cwm"
-elif [ $de_choice -eq "5" ]
-then
-  de="dwm"
-elif [ $de_choice -eq "6" ]
-then
-  de="evilwm"
-elif [ $de_choice -eq "7" ]
-then
-  de="Fluxbox"
-elif [ $de_choice -eq "8" ]
-then
-  de="flwm"
-elif [ $de_choice -eq "9" ]
-then
-  de="fvwm-1"
-elif [ $de_choice -eq "10" ]
-then
-  de="fvwm-2"
-elif [ $de_choice -eq "11" ]
-then
-  de="GNOME-3"
-elif [ $de_choice -eq "12" ]
-then
-  de="herbstluftwm"
-elif [ $de_choice -eq "13" ]
-then
-  de="i3"
-elif [ $de_choice -eq "14" ]
-then
-  de="IceWM"
-elif [ $de_choice -eq "15" ]
-then
-  de="JWM"
-elif [ $de_choice -eq "16" ]
-then
-  de="KDE-4"
-elif [ $de_choice -eq "17" ]
-then
-  de="larswm"
-elif [ $de_choice -eq "18" ]
-then
-  de="lwm"
-elif [ $de_choice -eq "19" ]
-then
-  de="MATE"
-elif [ $de_choice -eq "20" ]
-then
-  de="Openbox"
-elif [ $de_choice -eq "21" ]
-then
-  de="oroborus"
-elif [ $de_choice -eq "22" ]
-then
-  de="PekWM"
-elif [ $de_choice -eq "23" ]
-then
-  de="spectrwm"
-elif [ $de_choice -eq "24" ]
-then
-  de="tinywm"
-elif [ $de_choice -eq "25" ]
-then
-  de="w9wm"
-elif [ $de_choice -eq "26" ]
-then
-  de="XFCE-4"
+  exit 0
 fi
 
-if [ -e scripts/install-$de-on-$os-$arch.sh ]
-then
-  sh scripts/install-$de-on-$os-$arch.sh
-else
-  echo "Sorry, the script to install that hasn't been written yet."
-fi
+sh scripts/install-"$de"-on-"$os"-"$arch".sh
 
-echo "============================================"
-echo "|Would you like to reboot? (enter a number)|"
-echo "============================================"
-echo "|"
-echo "|1: Yes"
-echo "|2: No"
+echo "================================="
+echo "|Would you like to reboot? (y/n)|"
+echo "================================="
 echo "|"
 printf "|Your choice >"
-read reboot_choice
-if [ $reboot_choice -eq "1" ]
+read -r reboot_choice
+if [ "$reboot_choice" -eq "y" ]
 then
     reboot
 fi
