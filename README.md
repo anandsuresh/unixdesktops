@@ -38,6 +38,7 @@ sh ./install.sh
 * **jwm**: Joe's Window Manager
 * **KDE4**: KDE is a powerful graphical desktop environment for Unix workstations.
 * **larswm**: Tiling Window Manager for X
+* **Lumina**: Lumina Desktop Environment
 * **lwm**: Lightweight window manager
 * **MATE**: The MATE Desktop Environment is the continuation of GNOME 2. It provides an intuitive and attractive desktop environment using traditional metaphors for Linux and other Unix-like operating systems.
 * **matwm2**: Minamilistic, yet functional window manager for X11

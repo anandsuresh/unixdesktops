@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y lumina 
+echo "exec /usr/local/bin/start-lumina-desktop" >> /root/.xsession
+sh $(dirname "$0")/xdm
