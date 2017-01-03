@@ -60,7 +60,6 @@ sh ./install.sh
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.
 
 # License
-(BSD 2-clause)
 Copyright 2017 Rose Dovell 
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
