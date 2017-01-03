@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y wm2
+echo "exec /usr/local/bin/wm2" >> /root/.xsession
+sh $(dirname "$0")/xdm

@@ -55,4 +55,6 @@ sh ./install.sh
 * **w9wm**: Hack of 9wm to give virtual screens
 * **WeeWM**: Fast and ultra light windowmanager with total keyboard control
 * **WindowMaker**: GNUstep-compliant NeXTstep window manager clone
+* **wm2**: Simple window manager for X
+* **wmfs**: Floating and tiling Window Manager from Scratch
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.

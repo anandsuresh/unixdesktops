@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y wmfs
+echo "exec /usr/local/bin/wmfs" >> /root/.xsession
+sh $(dirname "$0")/xdm
