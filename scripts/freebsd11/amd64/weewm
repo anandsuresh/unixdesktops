@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y weewm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/weewm" >> /root/.xsession
+sh $(dirname "$0")/xdm

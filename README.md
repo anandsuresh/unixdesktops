@@ -51,5 +51,7 @@ sh ./install.sh
 * **treewm**: Window manager that arranges windows in a tree
 * **tvtwm**: Twm with a virtual desktop
 * **twm**: Tab Window Manager for the X Window System
+* **vtwm**: Twm with a virtual desktop and optional Motif-like features
 * **w9wm**: Hack of 9wm to give virtual screens
+* **WeeWM**: Fast and ultra light windowmanager with total keyboard control
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.

@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y vtwm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/vtwm" >> /root/.xsession
+sh $(dirname "$0")/xdm
