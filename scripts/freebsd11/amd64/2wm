@@ -1,9 +1,10 @@
 #!/bin/sh
 pkg install -y libX11
+cd /tmp
 git clone git://git.suckless.org/2wm
 cd 2wm
-sed -i '' 's/INCS[[:space:]]=[[:space:]]-I.[[:space:]]-I\/usr\/include[[:space:]]-I\${X11INC}/INCS\ =\ -I.\ -I\/usr\/include\ -I\${X11INC}\ -I/usr/local/include\ -L/usr/local/libX11/' config.mk
-sed -i '' 's/LIBS[[:space:]]=[[:space:]]-L\/usr\/lib[[:space:]]-lc[[:space:]]-L\${X11LIB}[[:space:]]-lX11/LIBS\ =\ -L\/usr\/lib\ -lc\ -L\${X11LIB}\ -lX11\ -I/usr/local/include\ -L/usr/local/libX11/' config.mk
+sed -i '' 's/INCS[[:space:]]=[[:space:]]-I.[[:space:]]-I\/usr\/include[[:space:]]-I\${X11INC}/INCS\ =\ -I.\ -I\/usr\/include\ -I\${X11INC}\ -I\/usr\/local\/include\ -L\/usr\/local\/libX11/' config.mk
+sed -i '' 's/LIBS[[:space:]]=[[:space:]]-L\/usr\/lib[[:space:]]-lc[[:space:]]-L\${X11LIB}[[:space:]]-lX11/LIBS\ =\ -L\/usr\/lib\ -lc\ -L\${X11LIB}\ -lX11\ -I\/usr\/local\/include\ -L\/usr\/local\/libX11/' config.mk
 make
 make install
 echo "exec /usr/local/bin/2wm" >> /root/.xsession
