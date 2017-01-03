@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y piewm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/piewm" >> /root/.xsession
+sh $(dirname "$0")/xdm

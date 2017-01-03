@@ -43,6 +43,7 @@ sh ./install.sh
 * **Openbox**: Small, fast, standards compliant, extensible window manager
 * **oroborus**: Small and simple GNOME-compatible window manager
 * **PekWM**: Light, Unobtrusive, and configurable windowmanager
+* **piewm**: tvtwm with pie (circular) menus
 * **spectrwm**: Small, dynamic tiling window manager for X11
 * **tinywm**: Ridiculously tiny window manager
 * **twm**: Tab Window Manager for the X Window System
