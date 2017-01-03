@@ -20,9 +20,11 @@ sh ./install.sh
 * **Awesome**: Tiling window manager initially based on a dwm code rewriting
 * **Blackbox**: Small and fast window manager for X11R6
 * **bspwm**: Tiling window manager based on binary space partitioning
+* **Cinnamon**: Fork of GNOME Shell with layout similar to GNOME 2
 * **ctwm**: Extension to twm, with support for multipe virtual screens, etc
 * **cwm**: Minimalistic window manager for X11 based on evilwm
 * **dwm**: Dynamic, small, fast and simple window manager
+* **Enlightenment**: Artistic X window manager
 * **evilwm**: Minimalist window manager based on 9wm
 * **Fluxbox**: Small and fast window manager based on BlackBox
 * **flwm**: The Fast Light Window Manager

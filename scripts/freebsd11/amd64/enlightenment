@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y enlightenment
+echo "exec /usr/local/bin/enlightenment_start" >> /root/.xsession
+sh $(dirname "$0")/xdm
