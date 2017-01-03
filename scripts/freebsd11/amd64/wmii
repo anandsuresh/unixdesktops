@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y wmii
+echo "exec /usr/local/bin/wmii" >> /root/.xsession
+sh $(dirname "$0")/xdm
