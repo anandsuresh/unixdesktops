@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y antiwm
+echo "exec /usr/local/bin/antiwm" >> /root/.xsession
+sh $(dirname "$0")/xdm
