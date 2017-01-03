@@ -46,6 +46,7 @@ sh ./install.sh
 * **piewm**: tvtwm with pie (circular) menus
 * **pwm**: lightweight window manager with emphasis on usability
 * **spectrwm**: Small, dynamic tiling window manager for X11
+* **swm**: Window manager for low-memory systems, with title bars and shading
 * **tinywm**: Ridiculously tiny window manager
 * **twm**: Tab Window Manager for the X Window System
 * **w9wm**: Hack of 9wm to give virtual screens

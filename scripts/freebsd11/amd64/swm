@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y swm
+echo "exec /usr/local/bin/swm" >> /root/.xsession
+sh $(dirname "$0")/xdm
