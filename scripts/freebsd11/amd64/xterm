@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y xterm
+echo "exec /usr/local/bin/xterm" >> /root/.xsession
+sh $(dirname "$0")/xdm

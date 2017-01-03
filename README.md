@@ -64,6 +64,7 @@ sh ./install.sh
 * **wmx**: Simple window manager based on wm2
 * **XFCE4**: Lightweight desktop environment for various Unix systems, easy to use and configure.
 * **XFCE4-wm**: Xfce's window manager
+* **xterm**: Terminal emulator for the X Window System
 
 # License
 Copyright 2017 Rose Dovell 
