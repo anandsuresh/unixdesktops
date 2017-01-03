@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pkg install -y dwm dmenu sterm
+echo "exec /usr/local/bin/dwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

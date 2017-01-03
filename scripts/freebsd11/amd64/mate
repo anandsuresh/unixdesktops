@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y mate
+echo "exec /usr/local/bin/mate-session" >> /root/.xsession
+sh $(dirname "$0")/xdm

@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y jwm
+echo "exec /usr/local/bin/jwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

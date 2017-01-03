@@ -1,0 +1,14 @@
+#!/bin/sh
+pkg install -y xorg dbus hal
+
+if ! grep "dbus_enable" /etc/rc.conf > /dev/null
+then
+  echo 'dbus_enable="YES"' >> /etc/rc.conf
+fi
+
+if ! grep "hald_enable" /etc/rc.conf > /dev/null
+then
+  echo 'hald_enable="YES"' >> /etc/rc.conf
+fi
+
+echo "#!/bin/sh" > /root/.xsession

@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y spectrwm
+echo "exec /usr/local/bin/spectrwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

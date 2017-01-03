@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y lwm
+echo "exec /usr/local/bin/lwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

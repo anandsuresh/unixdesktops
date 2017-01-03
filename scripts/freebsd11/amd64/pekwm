@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y pekwm
+echo "exec /usr/local/bin/pekwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

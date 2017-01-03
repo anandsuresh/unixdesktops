@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y herbstluftwm
+echo "exec /usr/local/bin/herbstluftwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

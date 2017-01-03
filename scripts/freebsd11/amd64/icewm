@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y icewm
+echo "exec /usr/local/bin/icewm-session" >> /root/.xsession
+sh $(dirname "$0")/xdm

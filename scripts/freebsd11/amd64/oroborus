@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y oroborus
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/oroborus" >> /root/.xsession
+sh $(dirname "$0")/xdm

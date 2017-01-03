@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y awesome
+echo "exec /usr/local/bin/awesome" >> /root/.xsession
+sh $(dirname "$0")/xdm

@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y w9wm
+echo "exec /usr/local/bin/w9wm" >> ~/.xsession
+sh $(dirname "$0")/xdm

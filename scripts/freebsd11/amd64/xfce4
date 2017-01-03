@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y xfce
+echo "exec /usr/local/bin/startxfce4 --with-ck-launcher" >> /root/.xsession
+sh $(dirname "$0")/xdm

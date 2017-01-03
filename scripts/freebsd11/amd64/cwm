@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pkg install -y cwm
+echo "exec /usr/local/bin/cwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

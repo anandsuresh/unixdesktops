@@ -1,0 +1,6 @@
+#!/bin/sh
+pkg install -y gnome3
+if ! grep "gdm_enable" /etc/rc.conf > /dev/null
+then
+  echo 'gdm_enable="YES"' >> /etc/rc.conf
+fi

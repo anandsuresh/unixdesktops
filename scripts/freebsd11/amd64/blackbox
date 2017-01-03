@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pkg install -y blackbox
+echo "exec /usr/local/bin/blackbox" >> /root/.xsession
+sh $(dirname "$0")/xdm

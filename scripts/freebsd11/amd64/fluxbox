@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y fluxbox
+echo "exec /usr/local/bin/startfluxbox" >> /root/.xsession
+sh $(dirname "$0")/xdm

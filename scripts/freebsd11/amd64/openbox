@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y openbox
+echo "exec /usr/local/bin/openbox-session" >> /root/.xsession
+sh $(dirname "$0")/xdm
