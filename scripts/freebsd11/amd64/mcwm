@@ -1,0 +1,5 @@
+#!/bin/sh
+pkg install -y mcwm 
+sh $(dirname "$0")/keylaunch
+echo "exec /usr/local/bin/mcwm" >> /root/.xsession
+sh $(dirname "$0")/xdm

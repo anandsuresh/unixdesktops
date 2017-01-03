@@ -1,0 +1,4 @@
+#!/bin/sh
+pkg install -y fvwm-crystal
+echo "exec /usr/local/bin/fvwm-crystal" >> /root/.xsession
+sh $(dirname "$0")/xdm
