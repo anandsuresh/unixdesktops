@@ -7,7 +7,7 @@ This is a collection of scripts meant to install desktop environments on unix-li
 
 ```
 git clone https://www.github.com/rosedovell/unixdesktops
-cd unixdesktop
+cd unixdesktops
 sh ./install.sh
 ```
 
