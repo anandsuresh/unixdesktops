@@ -1,7 +1,9 @@
 Here's how you open a terminal emulator(normally xterm) in the included desktop environments.
 
 * **2wm**: Press `Alt+p` to open dmenu, then type `xterm` and press `Enter`
-* **aewm**: Click the desktop to open the root menu, then click xterm* **amiwm**: Press `Alt+e` to open the run command dialog, then type `xterm` and press `Enter`
+* **aewm**: Click the desktop to open the root menu, then click xterm
+* **amiwm**: Press `Alt+e` to open the run command dialog, then type `xterm` and press `Enter`
+* **afterstep**: Left-click the desktop to open the menu, Right-click the Run option, enter `xterm` and press `Enter`
 * **antiwm**: Press `Alt+Enter`
 * **awesome**: Right-click the desktop and choose `open terminal`
 * **blackbox**: Right-click the desktop and choose `xterm`

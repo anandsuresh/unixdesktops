@@ -17,6 +17,7 @@ sh ./install.sh
 * **2wm**: dual window manager prototype (minimalist dwm with no tags, just one view)
 * **aewm**: ICCCM-compliant window manager based on 9wm
 * **amiwm**: Window manager that makes your desktop look like an Amiga(TM)
+* **afterstep**: Stable version of the Afterstep window manager
 * **antiwm**: Minimalist window manager inspired by Ratpoison
 * **Awesome**: Tiling window manager initially based on a dwm code rewriting
 * **Blackbox**: Small and fast window manager for X11R6
