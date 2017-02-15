@@ -1,6 +1,3 @@
 #!/bin/sh
 pkg install -y kde
-if ! grep "kdm4_enable" /etc/rc.conf > /dev/null
-then
-  echo 'kdm4_enable="YES"' >> /etc/rc.conf
-fi
+sysrc kdm4_enable=YES
